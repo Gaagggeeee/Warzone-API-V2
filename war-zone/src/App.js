@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from './components/form';
 import { Container, Row , Col } from 'reactstrap';
 import Profile from './components/profile';
-
 
 
 
@@ -27,31 +25,45 @@ class App extends Component {
         SPM: undefined,
         contracts: undefined,
         cash: undefined,
-        timePlayed: undefined,
-        error: true
+        timePlayed: undefined
     }
 
+    this.handleGamertag = this.handleGamertag.bind(this);
+    this.handleplatform = this.handlePlatform.bind(this);
     
-    
+    this.getStat();
 }
+
+  handleGamertag(event) {
+    this.setState({gamertag: event.target.value});
+    event.preventDefault();
+  }
+
+  handlePlatform(event) {
+    this.setState({platform: event.target.value});
+    event.preventDefault();
+  }
 
  
   
   getStat = async (event) => {
     
-    const { gamertag } = this.state;
-    const { platform } = this.state;
+    const gamertag = 'gaagggeeee';
+    const platform = 'xbl';
 
 
     if(gamertag && platform){
 
-        const response = await fetch(`https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/${gamertag}/${platform}`, {
-            method: "GET",
-            headers: {
-                "x-rapidapi-key": "584a334868msh963be87d4acd8dep10151ejsn-bd08947aeb",
-                "x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com"
-            }
-        });
+
+      const response = await fetch(`https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/${gamertag}/${platform}`, {
+        method: 'GET',
+        headers: {
+          'x-rapidapi-key': '584a334868msh963be87d4acd8dep10151ejsn0bd0894e7aeb',
+          'x-rapidapi-host': 'call-of-duty-modern-warfare.p.rapidapi.com'
+        }
+      });
+      
+     
 
         const stats = await response.json();
 
@@ -89,14 +101,14 @@ class App extends Component {
                                 <input 
                                     type='text'
                                     value={this.gamertag}
-                                    onChange={this.onGamertagChange}
+                                    onChange={this.GamertagChange}
                                     autoComplete='off'
                                     placeholder='Enter Gamertag'
                                 />
                                 <input 
                                     type='text'
                                     value={this.platform}
-                                    onChange={this.onPlatformChange}
+                                    onChange={this.PlatformChange}
                                     autoComplete='off'
                                     placeholder='Enter Platform'
                                 />
