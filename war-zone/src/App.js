@@ -70,21 +70,21 @@ class App extends Component {
         console.log(stats);
 
         this.setState ({
-            wins:stats.br.wins,
-            kills:stats.br.kills,
-            deaths:stats.br.deaths,
-            downs:stats.br.downs,
-            kdRatio:stats.br.kdRatio,
-            revives:stats.br.revives,
-            topFive:stats.br.topFive,
-            topTen:stats.br.topTen,
-            topTwen:stats.br.topTwen,
-            gamesPlayed:stats.br.gamesPlayed,
-            score:stats.br.score,
-            SPM:stats.br.SPM,
-            contracts:stats.br.contracts,
-            cash:stats.br.cash,
-            timePlayed:stats.br.timePlayed
+            wins:stats.wins,
+            kills:stats.kills,
+            deaths:stats.deaths,
+            downs:stats.downs,
+            kdRatio:stats.kdRatio,
+            revives:stats.revives,
+            topFive:stats.topFive,
+            topTen:stats.topTen,
+            topTwen:stats.topTwen,
+            gamesPlayed:stats.gamesPlayed,
+            score:stats.score,
+            SPM:stats.SPM,
+            contracts:stats.contracts,
+            cash:stats.cash,
+            timePlayed:stats.timePlayed
         });
     } else {
         this.setState({error: true});
