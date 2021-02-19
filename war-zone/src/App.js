@@ -20,6 +20,19 @@ class App extends Component {
 
   }
 
+// Rounding to Decimal place hundredth place
+  decimalSPM(scorePerMinute){
+    let dspm = Math.round(scorePerMinute * 1e2) / 1e2
+    return dspm;
+  }
+
+// Rounding to Decimal place hundredth place
+  decimalkdm(kdRatio){
+    let kdnum = Math.round(kdRatio * 1e2) / 1e2
+    return kdnum;
+  }
+
+
   getStats = async (e) => {
 
     e.preventDefault();
@@ -43,14 +56,14 @@ class App extends Component {
       kills: stats.br.kills,
       deaths:stats.br.deaths,
       downs:stats.br.downs,
-      kdRatio:stats.br.kdRatio,
+      kdRatio: this.decimalkdm(stats.br.kdRatio),
       revives:stats.br.revives,
       topFive:stats.br.topFive,
       topTen:stats.br.topTen,
       topTwen:stats.br.topTwentyFive,
       gamesPlayed:stats.br.gamesPlayed,
       score:stats.br.score,
-      SPM:stats.br.scorePerMinute,
+      SPM: this.decimalSPM(stats.br.scorePerMinute),
       contracts:stats.br.contracts,
       cash:stats.br.cash,
       timePlayed:stats.br.timePlayed

@@ -11,7 +11,7 @@ const Profile = props => {
             <Container className='profile-container' fluid={true} >
 {/* FIRST CONTENT ROW */}
                 <Row className='content-row'>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'>
                             <div className='content-inner-box'> 
                                 <p className='stat-name'>Wins:</p>
@@ -19,31 +19,33 @@ const Profile = props => {
                             </div>
                         </div>
                     </Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'> 
                             <p>Kills:</p>
                             <p className='prop-box'>{props.kills}</p> 
                         </div>
                     </Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'> 
                             <p>Deaths:</p>
                             <p className='prop-box'>{props.deaths}</p> 
                         </div>
                     </Col>
-                    <Col sm='2'>
+                </Row>
+                <Row>
+                    <Col sm='4'>
                         <div className='content-box'> 
                             <p>Downs:</p>
                             <p className='prop-box'>{props.downs}</p>
                         </div>
                     </Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'>
                             <p>KD:</p>
                             <p className='prop-box'>{props.kdRatio}</p>
                         </div>
                     </Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'>
                             <p>Revives:</p>
                             <p className='prop-box'>{props.revives}</p>
@@ -52,37 +54,39 @@ const Profile = props => {
                 </Row>
 {/* CONTENT ROW TWO */}
                 <Row className='contentRow'>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'> 
                             <p>Top 5:</p>
                             <p className='prop-box'>{props.topFive}</p>
                         </div>
                     </Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'> 
                             <p>Top 10:</p>
                             <p className='prop-box'>{props.topTen}</p> 
                         </div>
                     </Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'> 
                             <p>Top 25:</p>
                             <p className='prop-box'>{props.topTwen}</p> 
                         </div>
                     </Col>
-                    <Col sm='2'>
+                </Row>
+                <Row>
+                    <Col sm='4'>
                         <div className='content-box'> 
                             <p>Games Played:</p>
                             <p className='prop-box'>{props.gamesPlayed}</p>
                         </div>
                     </Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'>
                             <p>Score:</p>
                             <p className='prop-box'>{props.score}</p>
                         </div>
                     </Col>
-                    <Col sm='2'>
+                    <Col sm='4'>
                         <div className='content-box'>
                             <p>Score/Min:</p>
                             <p className='prop-box'>{props.SPM}</p>
