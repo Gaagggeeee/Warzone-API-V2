@@ -54,19 +54,19 @@ const Profile = props => {
                 <Row className='contentRow'>
                     <Col sm='2'>
                         <div className='content-box'> 
-                            <p>top Five:</p>
+                            <p>Top 5:</p>
                             <p className='prop-box'>{props.topFive}</p>
                         </div>
                     </Col>
                     <Col sm='2'>
                         <div className='content-box'> 
-                            <p>Top Ten:</p>
+                            <p>Top 10:</p>
                             <p className='prop-box'>{props.topTen}</p> 
                         </div>
                     </Col>
                     <Col sm='2'>
                         <div className='content-box'> 
-                            <p>Top TwenyFive:</p>
+                            <p>Top 25:</p>
                             <p className='prop-box'>{props.topTwen}</p> 
                         </div>
                     </Col>
@@ -84,7 +84,7 @@ const Profile = props => {
                     </Col>
                     <Col sm='2'>
                         <div className='content-box'>
-                            <p>Score Per Minute:</p>
+                            <p>Score/Min:</p>
                             <p className='prop-box'>{props.SPM}</p>
                         </div>
                     </Col>

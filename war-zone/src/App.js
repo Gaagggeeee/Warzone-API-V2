@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Container, Row , Col } from 'reactstrap';
 import Profile from './components/profile';
+import Footer from './components/footer';
 
 
 
@@ -108,6 +109,7 @@ class App extends Component {
           cash={this.state.cash}
           timePlayed={this.state.timePlayed}
         />
+        <Footer />
       </>
     );
   }

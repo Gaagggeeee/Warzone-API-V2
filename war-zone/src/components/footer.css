@@ -1,0 +1,32 @@
+/* CONTAINER */
+
+.footer-container
+{
+    background-color: #2d3640;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+/* CONTENT */
+
+.footer-box
+{
+    color: white;
+}
+
+.footer-box svg
+{
+    fill: white !important;    
+    
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-box svg:hover
+{
+    fill: grey !important;
+}
