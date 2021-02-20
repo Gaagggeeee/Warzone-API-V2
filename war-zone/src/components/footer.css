@@ -6,6 +6,8 @@
 
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    text-align: center;
 }
 
 
@@ -16,6 +18,10 @@
 .footer-box
 {
     color: white;
+
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.15rem;
+    letter-spacing: .08rem;
 }
 
 .footer-box svg

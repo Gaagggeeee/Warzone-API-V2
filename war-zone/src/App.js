@@ -80,20 +80,25 @@ class App extends Component {
             <Col>
               <div className='form-box'>
                 <form onSubmit={this.getStats}>
-                  <input 
-                    className='input-box'
-                    type='text'
-                    name='gamertag'
-                    autoComplete='off'
-                    placeholder='Enter Gamertag'
-                  />
-                  <input 
-                    className='input-box'
-                    type='text'
-                    name='platform'
-                    autoComplete='off'
-                    placeholder='Enter Platform'
-                  />
+                  <div>
+                    <input 
+                      className='input-box'
+                      type='text'
+                      name='gamertag'
+                      autoComplete='off'
+                      placeholder='Enter Gamertag'
+                    />
+                  </div>
+                  <div>
+                    <input 
+                      className='input-box'
+                      type='text'
+                      name='platform'
+                      autoComplete='off'
+                      placeholder='Enter Platform'
+                    />
+                    <p>Platform: xbl, battle, psn, steam, uno (Activision ID), acti (activision Tag)</p>
+                  </div>
                   <div>
                   <input 
                     className='input-box'
@@ -103,12 +108,7 @@ class App extends Component {
                 </form>
               </div>
               <div>
-                <a className='popup' href='#'>
-                  <span className="classic">
-                    So activision
-                  </span>
-                  Hover over me!
-                </a>
+                
               </div>
             </Col>
           </Row>
