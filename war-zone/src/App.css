@@ -20,5 +20,14 @@
 
 .input-box
 {
-  
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+
+  padding: .5rem;
+
+  font-family: 'Bebas Neue', cursive;
+
+  background: transparent;
 }
